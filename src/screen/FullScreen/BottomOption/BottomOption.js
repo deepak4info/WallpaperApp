@@ -29,14 +29,14 @@ export default function BottomOption({
         },
         () => {
           ToastAndroid.show('Done', ToastAndroid.SHORT);
-          console.log('Complete');
+         
 
           popupRef.current.close();
         },
         selectedWallpaperType,
       );
     } catch (err) {
-      console.log(err);
+   
     }
   };
   return (

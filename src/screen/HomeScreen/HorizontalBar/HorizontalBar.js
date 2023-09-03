@@ -47,7 +47,7 @@ export default function HorizontalBar({id}) {
                   
                 });
               }}>
-                {/* {console.log(url + list.path)} */}
+             
               <Card path={url + list.path} />
     
             </TouchableOpacity>
