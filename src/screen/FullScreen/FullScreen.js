@@ -55,12 +55,12 @@ export default function HomeScreen({route}) {
       }).fetch('GET', params.url);
 
       if (download.info().status == 200) {
-        console.log('Download Complete');
+     
 
         ToastAndroid.show('Download Done', ToastAndroid.SHORT);
       }
     } catch (err) {
-      console.log(err);
+    
     }
   };
 
@@ -70,12 +70,12 @@ export default function HomeScreen({route}) {
 
       if (!isDirExists) {
         await ReactNativeBlobUtil.fs.mkdir(wallartDirPath);
-        console.log('dir created');
+     
       } else {
-        console.log('dir already exist');
+     
       }
     } catch (err) {
-      console.log(err);
+    
     }
   };
 
@@ -90,9 +90,9 @@ export default function HomeScreen({route}) {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        console.log('You can use the storage');
+    
       } else {
-        console.log('Storage permission denied');
+     
       }
     } catch (err) {
       console.warn(err);
